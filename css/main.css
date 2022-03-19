@@ -1,0 +1,41 @@
+:root {
+    --color-main: #FFF;
+    --color-main-contrast: #111;
+    --margin: 2em;
+    --font-family: 'Ubuntu', cursive;
+}
+
+body {
+    background-color: var(--color-main-contrast);
+    color: var(--color-main);
+    font-family: var(--font-family);
+    margin: auto 10vw;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+body > * {
+    flex: 1;
+}
+
+h1 {
+    margin: var(--margin) 0;
+}
+
+footer {
+    display: flex;    
+    align-items: end;
+    justify-content: center;
+    padding: calc(var(--margin) * 2) 0;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.25em;
+}
+
+b {
+    color: var(--color-main-contrast);
+    background-color: var(--color-main);
+}
